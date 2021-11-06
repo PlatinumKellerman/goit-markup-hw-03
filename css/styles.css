@@ -9,6 +9,22 @@
   --section4-bckgnd: #f5f4fa;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 body {
   background-color: var(--background);
   font-family: 'Roboto', sans-serif;
@@ -36,7 +52,7 @@ body {
 .hdr-list-items {
   display: flex;
   flex-direction: row;
-  padding-right: 50px;
+  margin-right: 50px;
 }
 .nav-list {
   text-decoration: none;
@@ -49,23 +65,26 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0;
+  padding: 0;
 }
-.hdr-list1 {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  margin-right: 215px;
-  outline: 2px solid red;
-}
-.qqq {
+.hdr-list-nav {
   display: flex;
   margin-left: 93px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.hdr-list1 {
+  list-style: none;
+  display: inline-block;
+  flex-direction: row;
+  margin-top: 32px;
+  margin-right: 0;
+  margin-bottom: 32px;
+  margin-left: 281px;
+}
 .hdr-list-items1 {
-  padding-right: px;
+  margin-right: 50px;
+  display: inline-block;
 }
 .nav-list {
   font-weight: 500;
@@ -125,11 +144,12 @@ body {
 
 /* section 1 */
 .section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--hero-background);
   width: 1600px;
   margin: 0 auto;
-  padding-top: 200px;
-  outline: 3px solid yellowgreen;
 }
 
 .section1-title {
@@ -139,14 +159,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background);
-  width: 696px;
-  margin: 0px auto;
   text-align: center;
-  outline: 2px solid tomato;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
-  display: inline-block;
   font-family: Roboto;
   background-color: var(--accent);
   color: var(--background);
@@ -158,11 +177,11 @@ body {
   letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
-  padding: 10px 32px;
   margin-top: 30px;
   margin-bottom: 200px;
-  margin-left: 700px;
-  outline: 2px solid yellowgreen;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 32px;
 }
 
 .btn:hover,
