@@ -34,7 +34,10 @@ body {
 }
 
 /* HEADER */
-
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
 .hdr {
   width: 1600px;
   margin: 0 auto;
@@ -64,15 +67,11 @@ body {
   list-style: none;
   display: flex;
   flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-.hdr-list-nav {
-  display: flex;
   margin-left: 93px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .hdr-list1 {
   list-style: none;
   display: inline-block;
