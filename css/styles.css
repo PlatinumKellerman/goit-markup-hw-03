@@ -49,13 +49,14 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.header-box {
+  border-bottom: 1px solid var(--header-border);
+}
 .hdr {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--header-border);
 }
-.hdr-list .current {
+.navigation-list .current {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -79,7 +80,7 @@ body {
 .logo-hdr {
   padding: 24px 0;
 }
-.nav-list {
+.navigation-link {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -89,7 +90,7 @@ body {
   color: var(--main-h2h3);
 }
 
-.nav-list1 {
+.contacts-link {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -98,22 +99,29 @@ body {
   text-decoration: none;
   color: var(--main-text);
 }
-.hdr-list {
+.navigation-list {
   list-style: none;
   display: flex;
   align-items: center;
   margin-left: 93px;
 }
-.hdr-list .hdr-list-items + .hdr-list-items {
+.navigation-list-items {
+  display: flex;
+}
+.navigation-list .navigation-list-items + .navigation-list-items {
   margin-left: 50px;
 }
 
-.hdr-list1 {
+.contacts-list {
   list-style: none;
   display: flex;
+  margin-left: auto;
   align-items: center;
 }
-.hdr-list1 .hdr-list-items1 + .hdr-list-items1 {
+.contacts-list-items {
+  display: flex;
+}
+.contacts-list .contacts-list-items + .contacts-list-items {
   margin-left: 50px;
 }
 
@@ -127,10 +135,10 @@ body {
 
 .current:hover,
 .current:focus,
-.nav-list:hover,
-.nav-list:focus,
-.nav-list1:hover,
-.nav-list1:focus {
+.navigation-link:hover,
+.navigation-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent);
 }
 
@@ -145,6 +153,8 @@ body {
 }
 .cont-hero {
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .section1-title {
@@ -154,7 +164,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background);
-  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -170,7 +182,6 @@ body {
   border-radius: 4px;
   display: block;
   padding: 10px 32px;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -193,7 +204,9 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.sec2-list-item {
+  width: 270px;
+}
 .section2-list .sec2-list-item + .sec2-list-item {
   margin-left: 30px;
 }
@@ -225,10 +238,10 @@ body {
   line-height: 1.16;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 50px;
 }
 .section3-list {
   display: flex;
-  margin-top: 50px;
   justify-content: center;
 }
 .section3-list .section3-list-item + .section3-list-item {
@@ -238,7 +251,9 @@ body {
   list-style: none;
 }
 .section3-img {
+  max-width: 100%;
   display: block;
+  height: auto;
 }
 /* section4 */
 .section4 {
@@ -253,9 +268,9 @@ body {
   line-height: 1.16;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .section4-list {
-  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -268,7 +283,10 @@ body {
   background-color: var(--background);
 }
 .section4-text {
-  margin: 30px auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-right: auto;
+  padding-left: auto;
 }
 .section4-list-title {
   font-weight: 500;
@@ -285,6 +303,11 @@ body {
   display: flex;
   justify-content: center;
   color: var(--main-text);
+}
+.section4-img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 /* footer */
@@ -315,15 +338,20 @@ body {
   line-height: 1.71;
   font-style: normal;
   color: var(--background);
-  margin-top: 20px;
+}
+.logo-ftr {
+  margin-bottom: 20px;
 }
 .foot-list {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-.foot-list .foot-list-item + .foot-list-item {
-  margin-top: 9px;
+.foot-list-item {
+  margin-bottom: 9px;
+}
+.foot-list-item:last-child {
+  margin-bottom: 0;
 }
 .foot-adrs {
   font-size: 14px;
@@ -420,7 +448,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--header-border);
 }
 .projects-list-subtitle {
   font-weight: 700;
@@ -440,5 +469,7 @@ body {
   margin-left: 24px; */
 }
 .projects-img {
+  max-width: 100%;
   display: block;
+  height: auto;
 }
