@@ -88,6 +88,8 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--main-h2h3);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-link {
@@ -98,6 +100,8 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--main-text);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation-list {
   list-style: none;
@@ -196,7 +200,16 @@ body {
 /* section 2 */
 
 .section2-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section2-list {
@@ -204,9 +217,11 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .sec2-list-item {
   width: 270px;
 }
+
 .section2-list .sec2-list-item + .sec2-list-item {
   margin-left: 30px;
 }
@@ -376,7 +391,16 @@ body {
 
 /* PORTFOLIO */
 .portfolio-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* FILTERS */
